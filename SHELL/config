@@ -1,0 +1,63 @@
+[global_config]
+  window_state = maximise
+  title_hide_sizetext = True
+  suppress_multiple_term_dialog = True
+  title_font = System-ui 4
+[keybindings]
+[profiles]
+  [[default]]
+    background_darkness = 0.89
+    background_type = transparent
+    cursor_shape = underline
+    cursor_color = "#aaaaaa"
+    font = Tlwg Typo Bold 6
+    use_system_font = False
+  [[New Profile 2]]
+    cursor_color = "#aaaaaa"
+[layouts]
+  [[default]]
+    [[[child0]]]
+      type = Window
+      parent = ""
+      order = 0
+      position = 1920:0
+      maximised = True
+      fullscreen = False
+      size = 1920, 1047
+      title = TERMINATOR
+      last_active_term = d745c08d-d5f7-40fb-a5f8-1ec77a2a0077
+      last_active_window = True
+    [[[child1]]]
+      type = HPaned
+      parent = child0
+      order = 0
+      position = 1164
+      ratio = 0.6078328981723238
+    [[[terminal2]]]
+      type = Terminal
+      parent = child1
+      order = 0
+      use_system_font= true 
+      profile = default
+      uuid = d745c08d-d5f7-40fb-a5f8-1ec77a2a0077
+    [[[child3]]]
+      type = VPaned
+      parent = child1
+      order = 1
+      position = 723
+      ratio = 0.6938579654510557
+    [[[terminal4]]]
+      type = Terminal
+      parent = child3
+      order = 0
+      command = htop; bash
+      profile = default
+      uuid = ee27af8c-a91d-4226-a89b-cfd34f5047fe
+    [[[terminal5]]]
+      type = Terminal
+      parent = child3
+      order = 1
+      command = cmatrix; bash
+      profile = default
+      uuid = f54deb9e-24d2-414c-93b7-11aa2e256779
+[plugins]
