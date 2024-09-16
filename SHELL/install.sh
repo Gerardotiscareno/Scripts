@@ -14,7 +14,10 @@ sudo -- sh -c "apt install synaptic"
 ################################################
 echo "Installing customization"
 
-sudo -- sh -c "apt install cmatrix figlet lolcat latte-dock cowsay fortune toilet"
+sudo -- sh -c "apt install cmatrix figlet lolcat latte-dock cowsay fortune toilet vlc "
+
+. /etc/os-release
+sudo apt install -t ${VERSION_CODENAME}-backports cockpit
 
 ################################################
 ###  Tools
