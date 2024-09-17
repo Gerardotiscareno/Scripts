@@ -14,7 +14,7 @@ sudo -- sh -c "apt install synaptic"
 ################################################
 echo "Installing customization"
 
-sudo -- sh -c "apt install cmatrix figlet lolcat latte-dock cowsay fortune toilet vlc bashtop cava psensor"
+sudo -- sh -c "apt install cmatrix figlet lolcat latte-dock cowsay fortune toilet vlc bashtop cava psensor cpu-x hardinfo"
 
 . /etc/os-release
 sudo apt install -t ${VERSION_CODENAME}-backports cockpit
